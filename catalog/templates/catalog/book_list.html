@@ -1,16 +1,8 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
-  <h1>Book List</h1>
-  {% if book_list %}
-  <ul>
-    {% for book in book_list %}
-      <li>
-        <a href="{{ book.get_absolute_url }}">{{ book.title }}</a> ({{book.author}})
-      </li>
-    {% endfor %}
-  </ul>
-  {% else %}
-    <p>There are no books in the library.</p>
-  {% endif %}       
+  <h1><center>Blood & Wine in Tokyo</center></h1>
+  <p><center>Season 3 Episode 1</center></p>
+  <br></br>
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Sp6IRoj3rz4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
 {% endblock %}
